@@ -1,4 +1,17 @@
 @import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "flag-icons/css/flag-icons.min.css";
+
+/* Simple toast pop animation */
+@keyframes toast-pop {
+  0% { transform: translateY(12px); opacity: 0; }
+  60% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.toast-pop { animation: toast-pop 300ms ease-out both; }
+
+/* Subtle neon glow on hover (web3 feel) */
+.web3-glow:hover { box-shadow: 0 0 24px rgba(255,170,0,0.28), 0 0 48px rgba(255,120,0,0.16); }
 
 :root {
   --background: #ffffff;
