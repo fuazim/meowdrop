@@ -74,9 +74,16 @@ const dict: Dict = {
   "card.work": { en: "Work on Task", id: "Kerjakan Tugas" },
   "card.faucet": { en: "Claim Faucet", id: "Klaim Faucet" },
   "card.doneToday": { en: "done today", id: "selesai hari ini" },
-
-  "detail.subtitle": { en: "Edit project details", id: "Ubah detail proyek" },
-  "detail.delete": { en: "Delete", id: "Hapus" },
+ 
+   "detail.title": { en: "Edit Project Details", id: "Ubah Detail Proyek" },
+   "common.back": { en: "Back to Projects", id: "Kembali ke Proyek" },
+   "filter.all": { en: "All", id: "Semua" },
+   "list.empty_filter": {
+     en: "No projects match the current filter.",
+     id: "Tidak ada proyek yang cocok dengan filter saat ini.",
+   },
+   "detail.subtitle": { en: "Edit project details", id: "Ubah detail proyek" },
+   "detail.delete": { en: "Delete", id: "Hapus" },
   // Toasts
   "toast.saved": { en: "Project saved successfully", id: "Proyek berhasil disimpan" },
   "toast.created": { en: "Project created successfully", id: "Proyek berhasil dibuat" },

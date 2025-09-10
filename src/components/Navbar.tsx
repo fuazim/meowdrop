@@ -36,13 +36,10 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-30 w-full border-b border-white/10 bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/40">
       <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href={email ? "/projects" : "/"} className="flex items-center gap-2">
           <Image src="/images/meowdrop.png" alt="Meowdrop" width={100} height={100} className="rounded" />
         </Link>
         <nav className="flex items-center gap-3 text-sm">
-          <Link href="/projects" className="hover:text-amber-300 transition-colors inline-flex justify-center min-w-[6.5rem]">
-            {t("nav.projects")}
-          </Link>
           <div className="hidden sm:flex items-center rounded-md border border-white/15 bg-white/5 overflow-hidden min-w-[5.5rem]">
             <button
               onClick={() => setLang("en")}
